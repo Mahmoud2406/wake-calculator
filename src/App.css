@@ -217,14 +217,15 @@ body, html {
 .results-section {
   margin-top: 2.2rem;
   width: 100%;
-  max-width: 600px;
-  background: #f8fafc;
+  max-width: none;
+  background: #181c24;
   border-radius: 12px;
   box-shadow: 0 2px 8px #0001;
   padding: 24px 18px 18px 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1.5px solid #2d3340;
 }
 
 .results-title {
@@ -283,16 +284,17 @@ body, html {
 .results-scroll {
   display: flex;
   gap: 0.5rem;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   margin-top: 0.3rem;
   overflow-x: auto;
-  background: #fff;
+  background: #232733;
   border-radius: 6px;
   padding: 8px 6px;
-  border: 1px solid #e0e7ef;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.03) inset;
-  color: #2563eb;
+  border: 1px solid #2d3340;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.13) inset;
+  color: #38bdf8;
   font-size: 0.98rem;
+  min-width: 100%;
 }
 
 .results-item {
