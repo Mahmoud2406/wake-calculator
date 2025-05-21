@@ -217,7 +217,7 @@ body, html {
 .results-section {
   margin-top: 2.2rem;
   width: 100%;
-  max-width: none;
+  max-width: 100%;
   background: #181c24;
   border-radius: 12px;
   box-shadow: 0 2px 8px #0001;
