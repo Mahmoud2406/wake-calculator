@@ -357,8 +357,8 @@ function App() {
               <span className="excel-col" style={{ color: '#7dd3fc' }}>width</span>, <span className="excel-col" style={{ color: '#7dd3fc' }}>height</span>, <span className="excel-col" style={{ color: '#7dd3fc' }}>area</span>, <span className="excel-col" style={{ color: '#7dd3fc' }}>rho</span> kan fylles ut i skjemaet eller legges til i filen.
             </div>
             {showPreview && csvData.length > 0 && (
-              <div className="excel-preview-table" style={{ maxHeight: 320, overflow: 'auto', width: '100%', borderRadius: 6, border: '1px solid #232733', background: '#232733', marginTop: 8 }}>
-                <table className="preview-table" style={{ borderCollapse: 'collapse', width: 'max-content', minWidth: '100%', fontSize: 14, background: '#232733', color: '#e0e7ef' }}>
+              <div className="excel-preview-table" style={{ maxHeight: 320, overflow: 'auto', width: '100%', minWidth: 0, maxWidth: '100%', borderRadius: 6, border: '1px solid #232733', background: '#232733', marginTop: 8 }}>
+                <table className="preview-table" style={{ borderCollapse: 'collapse', width: '100%', minWidth: '100%', fontSize: 14, background: '#232733', color: '#e0e7ef' }}>
                   <thead>
                     <tr>
                       {Object.keys(csvData[0]).map((key) => (
