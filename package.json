@@ -17,7 +17,7 @@
     "web-vitals": "^2.1.4",
     "xlsx": "^0.18.5"
   },
-  "homepage": "https://Mahmo.github.io/wake-calculator",
+  "homepage": "https://mahmoud2406.github.io/wake-calculator",
   "scripts": {
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "react-scripts build",
