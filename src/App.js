@@ -321,10 +321,14 @@ function App() {
             borderRadius: 10,
             padding: '18px 18px 10px 18px',
             width: '100%',
+            minWidth: 0,
+            maxWidth: '100%',
             marginBottom: 0,
             color: '#e0e7ef',
             fontSize: 15,
             boxShadow: '0 2px 8px #0002',
+            overflowX: 'auto',
+            display: 'block',
           }}>
             <div className="excel-syntax-header" style={{
               display: 'flex',
