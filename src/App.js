@@ -264,8 +264,10 @@ function App() {
           boxShadow: '0 6px 32px #0006',
           padding: 36,
           minWidth: 420,
-          maxWidth: 600,
-          width: 520,
+          maxWidth: '70%',
+          width: '70%',
+          flexBasis: '70%',
+          flexGrow: 1,
           margin: 0,
           display: 'flex',
           flexDirection: 'column',
@@ -351,20 +353,20 @@ function App() {
               <span className="excel-col" style={{ color: '#7dd3fc' }}>width</span>, <span className="excel-col" style={{ color: '#7dd3fc' }}>height</span>, <span className="excel-col" style={{ color: '#7dd3fc' }}>area</span>, <span className="excel-col" style={{ color: '#7dd3fc' }}>rho</span> kan fylles ut i skjemaet eller legges til i filen.
             </div>
             {showPreview && csvData.length > 0 && (
-              <div className="excel-preview-table" style={{ maxHeight: 180, overflow: 'auto', width: '100%', borderRadius: 6, border: '1px solid #232733', background: '#232733', marginTop: 8 }}>
-                <table className="preview-table" style={{ borderCollapse: 'collapse', width: '100%', fontSize: 14, background: '#232733', color: '#e0e7ef' }}>
+              <div className="excel-preview-table" style={{ maxHeight: 320, overflow: 'auto', width: '100%', borderRadius: 6, border: '1px solid #232733', background: '#232733', marginTop: 8 }}>
+                <table className="preview-table" style={{ borderCollapse: 'collapse', width: 'max-content', minWidth: '100%', fontSize: 14, background: '#232733', color: '#e0e7ef' }}>
                   <thead>
                     <tr>
-                      {Object.keys(csvData[0]).slice(0, 8).map((key) => (
-                        <th key={key} style={{ border: '1px solid #2d3340', padding: '4px 8px', background: '#181c24', fontWeight: 600, color: '#7dd3fc' }}>{key}</th>
+                      {Object.keys(csvData[0]).map((key) => (
+                        <th key={key} style={{ border: '1px solid #2d3340', padding: '4px 8px', background: '#181c24', fontWeight: 600, color: '#7dd3fc', position: 'sticky', top: 0, zIndex: 1, whiteSpace: 'nowrap' }}>{key}</th>
                       ))}
                     </tr>
                   </thead>
                   <tbody>
-                    {csvData.slice(0, 8).map((row, idx) => (
+                    {csvData.slice(0, 20).map((row, idx) => (
                       <tr key={idx}>
-                        {Object.keys(csvData[0]).slice(0, 8).map((key) => (
-                          <td key={key} style={{ border: '1px solid #232733', padding: '4px 8px', background: idx % 2 === 0 ? '#232733' : '#181c24', color: '#e0e7ef' }}>{row[key]}</td>
+                        {Object.keys(csvData[0]).map((key) => (
+                          <td key={key} style={{ border: '1px solid #232733', padding: '4px 8px', background: idx % 2 === 0 ? '#232733' : '#181c24', color: '#e0e7ef', whiteSpace: 'nowrap' }}>{row[key]}</td>
                         ))}
                       </tr>
                     ))}
@@ -534,7 +536,10 @@ function App() {
         {/* Centered instructions panel with modern style */}
         <aside className="instructions-panel" style={{
           minWidth: 340,
-          maxWidth: 500,
+          maxWidth: '30%',
+          width: '30%',
+          flexBasis: '30%',
+          flexGrow: 0,
           margin: '0',
           alignSelf: 'flex-start',
           background: '#232733',
