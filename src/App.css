@@ -1,0 +1,478 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  background: #f6f8fa;
+  min-height: 100vh;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* App.css: Simple, clean layout for Wake Calculator */
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  background: #f3f6fa;
+  padding: 32px 0 80px 0;
+}
+
+.main-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px #0002;
+  padding: 36px 32px 32px 32px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 720px;
+  min-width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1a2233;
+  letter-spacing: 0.01em;
+  text-align: center;
+}
+
+.file-upload {
+  width: 100%;
+  margin-bottom: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-upload.modern-upload {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.2rem;
+}
+
+.file-upload-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #e6eaf3;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  font-weight: 500;
+  color: #1a2233;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.file-upload-label:focus, .file-upload-label:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.file-upload-label:hover {
+  background: #d2d8e6;
+}
+
+.file-upload-icon {
+  font-size: 1.5rem;
+}
+
+.file-upload-input {
+  display: none;
+}
+
+.file-upload-success {
+  margin-top: 0.5rem;
+  color: #1a7f37;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.file-upload-success-icon {
+  font-size: 1.2em;
+}
+
+.file-upload-success-text {
+  font-size: 1.05rem;
+}
+
+.error-message {
+  color: #b91c1c;
+  background: #fef2f2;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  padding: 0.7rem 1.2rem;
+  margin-top: 1rem;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.05rem;
+}
+
+.inputs-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem 2.2rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.input-label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #1a2233;
+  font-size: 1rem;
+  gap: 0.3rem;
+}
+
+.input-label span {
+  margin-bottom: 4px;
+}
+
+.input-field {
+  border: 1.5px solid #2d3340;
+  border-radius: 6px;
+  padding: 6px 10px;
+  font-size: 15px;
+  background: #232733;
+  color: #e0e7ef; /* Lighter text for better contrast */
+  font-family: 'Fira Mono', 'Menlo', 'Consolas', monospace;
+  transition: border 0.2s, background 0.2s, color 0.2s;
+}
+
+.input-field:focus {
+  border: 1.5px solid #7dd3fc;
+  background: #181c24;
+  color: #7dd3fc;
+}
+
+.main-btn {
+  background: #4f8cff;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 2.2rem;
+  font-size: 1.1rem;
+  margin: 1.2rem 0 0.5rem 0;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0001;
+  transition: background 0.2s;
+}
+
+.main-btn:focus, .main-btn:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.main-btn:hover {
+  background: #2563eb;
+}
+
+.results-section {
+  margin-top: 2.2rem;
+  width: 100%;
+  max-width: 600px;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px 18px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.results-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1.1rem;
+  color: #1a2233;
+  text-align: center;
+}
+
+.results-grid {
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.result-card {
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px #0001;
+  padding: 1.1rem 1.5rem;
+  min-width: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.result-label {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+}
+
+.result-value {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.results-list {
+  margin-top: 0.7rem;
+  width: 100%;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.results-list strong {
+  color: #1e293b;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.results-scroll {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.3rem;
+  overflow-x: auto;
+  background: #fff;
+  border-radius: 6px;
+  padding: 8px 6px;
+  border: 1px solid #e0e7ef;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.03) inset;
+  color: #2563eb;
+  font-size: 0.98rem;
+}
+
+.results-item {
+  background: #e6eaf3;
+  border-radius: 4px;
+  padding: 2px 8px;
+  font-family: monospace;
+  font-size: 0.98em;
+  color: #1a202c;
+}
+
+.footer {
+  width: 100%;
+  text-align: center;
+  color: #888;
+  font-size: 1rem;
+  background: none;
+  margin-top: 40px;
+  padding: 16px 0 0 0;
+  border: none;
+  position: static;
+  padding-bottom: 1.5rem;
+}
+
+.excel-syntax-box {
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 18px 18px 10px 18px;
+  margin-bottom: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  position: relative;
+  margin-top: 1.2rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.excel-syntax-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #1a202c;
+}
+
+.close-preview-btn {
+  background: none;
+  border: none;
+  font-size: 1.3rem;
+  color: #888;
+  cursor: pointer;
+  padding: 0 6px;
+  border-radius: 4px;
+  transition: background 0.2s;
+}
+
+.close-preview-btn:hover {
+  background: #e6eaf3;
+}
+
+.excel-syntax-desc {
+  font-size: 1rem;
+  color: #2a2a2a;
+  margin-bottom: 0.7rem;
+}
+
+.excel-col {
+  background: #181c24;
+  border-radius: 4px;
+  padding: 2px 6px;
+  font-family: 'Fira Mono', 'Menlo', 'Consolas', monospace;
+  font-size: 1em;
+  margin: 2px 2px 2px 0;
+  color: #7dd3fc;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  border: 1px solid #2d3340;
+  box-shadow: 0 1px 2px #0002;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.excel-preview-table {
+  margin-top: 0.5rem;
+  border-radius: 8px;
+  overflow: auto;
+  box-shadow: 0 1px 4px #0001;
+}
+
+.excel-preview-grid {
+  --rdg-header-background-color: #e9eef6;
+  --rdg-row-hover-background-color: #f3f7fa;
+  --rdg-row-selected-background-color: #dbeafe;
+  font-size: 0.98rem;
+}
+
+@media (max-width: 900px) {
+  .main-card {
+    max-width: 99vw;
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+  }
+  .results-grid {
+    flex-direction: column;
+    gap: 1.1rem;
+  }
+  .inputs-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}
+@media (max-width: 600px) {
+  .main-card {
+    padding: 1.2rem 0.5rem 1.2rem 0.5rem;
+    max-width: 99vw;
+  }
+  .results-grid {
+    flex-direction: column;
+    gap: 0.7rem;
+  }
+  .inputs-grid {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+}
+
+.cd-warning {
+  color: #b85c00;
+  background: #fff7ed;
+  border: 1px solid #fdba74;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  margin: 0.7rem 0 0.2rem 0;
+  text-align: center;
+}
+
+.instructions-panel {
+  min-width: 340px;
+  max-width: 400px;
+  margin-left: 32px;
+  align-self: flex-start;
+  background: #f8fafc;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #0001;
+  padding: 24px;
+  font-size: 15px;
+  color: #222;
+  text-align: right;
+  position: sticky;
+  top: 24px;
+}
+
+@media (max-width: 1100px) {
+  .app-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 0 80px 0;
+  }
+  .instructions-panel {
+    margin-left: 0;
+    margin-top: 32px;
+    position: static;
+    width: 100%;
+    max-width: 600px;
+    text-align: right;
+  }
+}
+@media (max-width: 700px) {
+  .main-card, .instructions-panel {
+    max-width: 98vw;
+    min-width: 0;
+    padding: 16px 4vw;
+  }
+  .excel-syntax-box, .results-section {
+    max-width: 98vw;
+    padding: 12px 2vw;
+  }
+  .footer {
+    font-size: 0.95rem;
+    padding: 10px 0 0 0;
+  }
+}
