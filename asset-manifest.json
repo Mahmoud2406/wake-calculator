@@ -1,17 +1,15 @@
 {
   "files": {
-    "main.css": "/wake-calculator/static/css/main.dacf1cbd.css",
-    "main.js": "/wake-calculator/static/js/main.82b9fa68.js",
+    "main.css": "/wake-calculator/static/css/main.b61c4005.css",
+    "main.js": "/wake-calculator/static/js/main.69e67e04.js",
     "static/js/453.e2e1be63.chunk.js": "/wake-calculator/static/js/453.e2e1be63.chunk.js",
-    "static/media/bootstrap-icons.woff?": "/wake-calculator/static/media/bootstrap-icons.1295669cd4e305c97f2c.woff",
-    "static/media/bootstrap-icons.woff2?": "/wake-calculator/static/media/bootstrap-icons.92ea18a81d737146ff04.woff2",
     "index.html": "/wake-calculator/index.html",
-    "main.dacf1cbd.css.map": "/wake-calculator/static/css/main.dacf1cbd.css.map",
-    "main.82b9fa68.js.map": "/wake-calculator/static/js/main.82b9fa68.js.map",
+    "main.b61c4005.css.map": "/wake-calculator/static/css/main.b61c4005.css.map",
+    "main.69e67e04.js.map": "/wake-calculator/static/js/main.69e67e04.js.map",
     "453.e2e1be63.chunk.js.map": "/wake-calculator/static/js/453.e2e1be63.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dacf1cbd.css",
-    "static/js/main.82b9fa68.js"
+    "static/css/main.b61c4005.css",
+    "static/js/main.69e67e04.js"
   ]
 }
