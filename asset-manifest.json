@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/wake-calculator/static/css/main.92fd6e2c.css",
+    "main.js": "/wake-calculator/static/js/main.352f4952.js",
+    "static/js/453.e2e1be63.chunk.js": "/wake-calculator/static/js/453.e2e1be63.chunk.js",
+    "index.html": "/wake-calculator/index.html",
+    "main.92fd6e2c.css.map": "/wake-calculator/static/css/main.92fd6e2c.css.map",
+    "main.352f4952.js.map": "/wake-calculator/static/js/main.352f4952.js.map",
+    "453.e2e1be63.chunk.js.map": "/wake-calculator/static/js/453.e2e1be63.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.92fd6e2c.css",
+    "static/js/main.352f4952.js"
+  ]
+}
