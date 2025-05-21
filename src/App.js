@@ -252,9 +252,9 @@ function App() {
         justifyContent: 'center',
         alignItems: 'flex-start',
         width: '100%',
-        maxWidth: 1400,
+        maxWidth: 1600,
         margin: '0 auto',
-        gap: 40,
+        gap: 32,
         padding: '32px 0 64px 0',
         flex: 1
       }}>
@@ -263,10 +263,10 @@ function App() {
           borderRadius: 18,
           boxShadow: '0 6px 32px #0006',
           padding: 36,
-          minWidth: 420,
-          maxWidth: '70%',
-          width: '70%',
-          flexBasis: '70%',
+          minWidth: 600,
+          maxWidth: '75vw',
+          width: '75vw',
+          flexBasis: '75%',
           flexGrow: 1,
           margin: 0,
           display: 'flex',
@@ -535,10 +535,10 @@ function App() {
         </section>
         {/* Centered instructions panel with modern style */}
         <aside className="instructions-panel" style={{
-          minWidth: 340,
-          maxWidth: '30%',
-          width: '30%',
-          flexBasis: '30%',
+          minWidth: 320,
+          maxWidth: '25vw',
+          width: '25vw',
+          flexBasis: '25%',
           flexGrow: 0,
           margin: '0',
           alignSelf: 'flex-start',
